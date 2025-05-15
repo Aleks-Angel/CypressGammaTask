@@ -5,7 +5,7 @@
 For installing cypress cd to the project's root folder and run:
 
 ```
-npm install
+npm install cypress
 ```
 
 
