@@ -1,0 +1,27 @@
+export const productsPage = {
+  productsTab: () => cy.contains("Products"),
+  allProductsTitle: () => cy.get(".title"),
+  firstProduct: () => cy.get(".product-image-wrapper").first(),
+  viewProductBtn: () => cy.contains("View Product"),
+  productInfoHeader: () => cy.get(".product-information > h2"),
+  productInfoDetails: () => [
+    cy.get(".product-information > :nth-child(3)"),
+    cy.get(":nth-child(5) > span"),
+    cy.get(".product-information > :nth-child(6)"),
+    cy.get(".product-information > :nth-child(7)"),
+    cy.get(".product-information > :nth-child(8)")
+  ],
+  searchInput: () => cy.get("#search_product"),
+  searchBtn: () => cy.get("#submit_search"),
+  cartProduct: () => cy.get("#product-1"),
+  cartQuantity: () => cy.get(".cart_quantity > .disabled"),
+  reviewName: () => cy.get("#name"),
+  reviewEmail: () => cy.get("#email"),
+  reviewTextarea: () => cy.get("textarea"),
+  reviewSubmit: () => cy.get("#button-review"),
+  reviewSuccess: () => cy.get(".alert-success"),
+  footer: () => cy.get("#footer"),
+  subscriptionHeader: () => cy.get(".single-widget > h2"),
+  scrollUpBtn: () => cy.get("#scrollUp"),
+  sliderCarousel: () => cy.get("#slider-carousel"),
+};
